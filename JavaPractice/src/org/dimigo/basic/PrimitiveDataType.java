@@ -20,8 +20,8 @@ package org.dimigo.basic;
 public class PrimitiveDataType {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+		// 코드 수정!!!!
+		// 수정수정
 	}
 
 }
