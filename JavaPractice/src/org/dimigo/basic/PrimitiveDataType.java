@@ -20,7 +20,7 @@ package org.dimigo.basic;
 public class PrimitiveDataType {
 
 	public static void main(String[] args) {
-		System.out.print("h");
+		System.out.print("헬로");
 	}
 
 }
