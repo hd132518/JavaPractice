@@ -1,7 +1,5 @@
 package org.dimigo.basic;
-
 public class TypeCasting {
-
 	public static void main(String[] args) {
 		int won = 17000000;
 		int emp = 3;
