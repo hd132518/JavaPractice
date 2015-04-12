@@ -18,12 +18,26 @@ public class Book {
 	private String author;
 	private int page;
 	
-	public static void main(String[] args){
-		Book book = new Book();
-		Book book2 = new Book();
+	public Book() {
 		
-		System.out.println(book);
-		System.out.println(book2);
+	}
+	
+	public Book(String newTitle, String newAuthor, int newPage) {
+		System.out.println("나는 세개짜리");
+		title = newTitle;
+		author = newAuthor;
+		page = newPage;
+	}
+
+	public Book(String newTitle, String newAuthor) {
+		System.out.println("나는 세개짜리");
+		title = newTitle;
+		author = newAuthor;
+	}
+
+	public Book(String newTitle) {
+		System.out.println("나는 세개짜리");
+		title = newTitle;
 	}
 	
 	public String getTitle () {

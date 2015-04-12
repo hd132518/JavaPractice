@@ -19,6 +19,61 @@ public class Car {
 	private int price;
 	private String company;
 	
+	/**
+	 * @param model
+	 * @param maxSpeed
+	 * @param color
+	 * @param price
+	 * @param company
+	 */
+	public Car (String amodel, int amaxSpeed, String acolor, int aprice, String acompany) {
+		this.model = amodel;
+		this.maxSpeed = amaxSpeed;
+		this.color = acolor;
+		this.price = aprice;
+		this.company = acompany;
+	}
+	
+	public String getCompany() {
+		return company;
+	}
+	
+	public String getModel () {
+		return model;
+	}
+
+	public void setModel (String amodel) {
+		model = amodel;
+	}
+
+	public int getMaxSpeed () {
+		return maxSpeed;
+	}
+
+	public void setMaxSpeed (int amaxSpeed) {
+		maxSpeed = amaxSpeed;
+	}
+
+	public String getColor () {
+		return color;
+	}
+
+	public void setColor (String acolor) {
+		color = acolor;
+	}
+
+	public int getPrice () {
+		return price;
+	}
+
+	public void setPrice (int aprice) {
+		price = aprice;
+	}
+
+	public void setCompany (String acompany) {
+		company = acompany;
+	}
+
 	public void forward(int speed) {
 		System.out.println("부릉부릉 땅크나가신다!!");
 	}
@@ -38,5 +93,13 @@ public class Car {
 	
 	public void turnRight(float angle) {
 		System.out.println(angle+"도 만큼 오른쪽으로 회전");
+	}
+	
+	public void print() {
+		System.out.println("제조사명: "+company);
+		System.out.println("모델명: "+model);
+		System.out.println("색상: "+color);
+		System.out.println("최대속도: "+maxSpeed);
+		System.out.printf("가격 : %,d원\n\n", price);
 	}
 }

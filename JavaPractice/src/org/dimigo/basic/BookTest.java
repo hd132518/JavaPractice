@@ -15,13 +15,9 @@ package org.dimigo.basic;
 public class BookTest {
 
 	public static void main(String[] args) {
-		Book book = new Book();
+		Book book = new Book("자바를 잡아라", "김자바", 293);
 		
 		System.out.println(book);
-		
-		book.setAuthor("박건");
-		book.setPage(100);
-		book.setTitle("박건의 일생");
 		
 		System.out.println(book.getAuthor());
 		System.out.println(book.getTitle());
