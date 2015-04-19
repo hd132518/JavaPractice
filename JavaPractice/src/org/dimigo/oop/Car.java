@@ -1,4 +1,4 @@
-package org.dimigo.basic;
+package org.dimigo.oop;
 
 /**
  * <pre>
@@ -19,19 +19,8 @@ public class Car {
 	private int price;
 	private String company;
 	
-	/**
-	 * @param model
-	 * @param maxSpeed
-	 * @param color
-	 * @param price
-	 * @param company
-	 */
-	public Car (String amodel, int amaxSpeed, String acolor, int aprice, String acompany) {
-		this.model = amodel;
-		this.maxSpeed = amaxSpeed;
-		this.color = acolor;
-		this.price = aprice;
-		this.company = acompany;
+	public Car() {
+		
 	}
 	
 	public String getCompany() {
