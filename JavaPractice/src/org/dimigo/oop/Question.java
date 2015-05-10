@@ -51,6 +51,8 @@ public class Question {
 		} else {
 			System.out.println("틀렸습니다. 당신은 매국노입니다.");
 		}
+		
+		scanner.close();
  	}
 	
 }
