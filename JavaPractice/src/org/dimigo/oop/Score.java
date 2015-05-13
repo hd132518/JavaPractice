@@ -24,7 +24,7 @@ public class Score {
 		double b = scanner.nextDouble();
 		System.out.println("영어 점수 입력 => ");
 		double c = scanner.nextDouble();
-		
+
 		System.out.println(
 			new StringBuilder("\n<< 점수 출력 >>\n")
 			.append("국어 점수 : ")
@@ -43,5 +43,6 @@ public class Score {
 			.append(String.format("%.1f", (a + b + c) /3))
 			.append("점\n")
 		);
+		scanner.close();
 	}
 }
