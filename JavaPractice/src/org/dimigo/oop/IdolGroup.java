@@ -15,7 +15,9 @@ package org.dimigo.oop;
 public class IdolGroup {
 
 	public static void main (String[] args) {
+		// EDM Label List
 		String[] idolGroup = {"Monstercat", "Hyperbrain", "Spinnin' Records"};
+		// EDM Producers
 		String[][] members = {
 			{"Au5", "Braken", "Haywyre", "Laszlo", "Pegboard Nerds"},
 			{"PenguinMike", "ZeroTech"},
