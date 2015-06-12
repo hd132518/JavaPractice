@@ -20,7 +20,7 @@ public class CalculatorTest {
 	public static void main (String[] args) {
 		
 		Calculator calc = new Calculator(10, 20);
-		calc.powerOn();
+		//calc.powerOn();
 		
 		System.out.println("10 + 20 = "+calc.add());
 		System.out.println("10 - 20 = "+calc.sub());

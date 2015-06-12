@@ -2,88 +2,47 @@ package org.dimigo.oop;
 
 /**
  * <pre>
- * org.dimigo.basic
+ * org.dimigo.oop
  * 	|_Car2
  * 
  * 개요 : 
- * 작성일 : 2015. 4. 16.
+ * 작성일 : 2015. 6. 12.
  * </pre>
  *
  * @author	박건
  * @version	1.0
  */
 public class Car2 {
-	private String company;
-	private String model;
-	private String color;
-	private int maxSpeed;
-	private int price;
 	
-	public Car2() {
-		
+	public Car2(String name) {
+		this.name = name;
 	}
-
-	/**
-	 * @param company 제조사이름
-	 * @param model 모델명
-	 * @param color 색상
-	 * @param maxSpeed 최고속력
-	 * @param price 가격
-	 */
-	public Car2 (String newCompany, String newModel, String newColor, int newMaxSpeed, int newPrice) {
-		company = newCompany;
-		model = newModel;
-		color = newColor;
-		maxSpeed = newMaxSpeed;
-		price = newPrice;
+	
+	private String name;
+	public String getName() {
+		return name;
 	}
-
-	public String getCompany () {
+	private static String company;
+	public static String getCompany() {
 		return company;
 	}
-
-	public void setCompany (String company) {
-		this.company = company;
-	}
-
-	public String getModel () {
-		return model;
-	}
-
-	public void setModel (String model) {
-		this.model = model;
-	}
-
-	public String getColor () {
-		return color;
-	}
-
-	public void setColor (String color) {
-		this.color = color;
-	}
-
-	public int getMaxSpeed () {
-		return maxSpeed;
-	}
-
-	public void setMaxSpeed (int maxSpeed) {
-		this.maxSpeed = maxSpeed;
-	}
-
-	public int getPrice () {
-		return price;
-	}
-
-	public void setPrice (int price) {
-		this.price = price;
+	public static void setCompany(String company) {
+		Car2.company = company;
 	}
 	
-	public void print() {
-		System.out.println("제조사명: "+company);
-		System.out.println("모델명: "+model);
-		System.out.println("색상: "+color);
-		System.out.println("최대속도: "+maxSpeed);
-		System.out.printf("가격 : %,d원\n\n", price);
+	public void printCar() {
+		System.out.println(name + ", " + company);
+	}
+	public void printCar2() {
+		System.out.println(this.getName() + ", " + getCompany());
 	}
 	
+	public static void  printCar3(Car2 car) {
+		System.out.println(car.name + ", " + company);
+	}
+	
+	public static void printCar4(Car2 car) {
+		System.out.println(car.name + ", " + getCompany());
+	}
+
 }

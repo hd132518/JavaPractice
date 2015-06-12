@@ -3,38 +3,21 @@ package org.dimigo.oop;
 /**
  * <pre>
  * org.dimigo.oop
- * 	|_Calculator
+ * 	|_Calculator2
  * 
  * 개요 : 
- * 작성일 : 2015. 6. 5.
+ * 작성일 : 2015. 6. 11.
  * </pre>
  *
  * @author	박건
  * @version	1.0
  */
-public class Calculator {
+public class Calculator2 {
 
-	private int num1;
-	private int num2;
+	/** 인스턴스 필드  **/
 	private boolean powerFlag = false;
 	
-	public Calculator () {
-		
-	}
-	/**
-	 * @param num1
-	 * @param num2
-	 */
-	public Calculator (int num1, int num2) {
-		this.num1 = num1;
-		this.num2 = num2;
-	}
-	
-	/*
-	public void powerOn() {
-		System.out.println("전원을 켭니다.");
-	}*/
-	
+	/** 인스턴스 메소드 **/
 	public void powerOn() {
 		if(!this.powerFlag) {
 			this.powerFlag = true;
@@ -47,23 +30,24 @@ public class Calculator {
 		System.out.println("전원을 끕니다.");
 	}
 	
-	public int add() {
-		this.powerOn();
+	/** 정적 필드 **/
+	public static double PI = 3.14159265358979323846264338;
+	
+	/** 정적 메소드 **/
+	
+	public static int add(int num1, int num2) {
 		return num1 + num2;
 	}
 	
-	public int sub() {
-		this.powerOn();
+	public static int sub(int num1, int num2) {
 		return num1 - num2;
 	}
 	
-	public int mul() {
-		this.powerOn();
+	public static int mul(int num1, int num2) {
 		return num1 * num2;
 	}
 	
-	public double div() {
-		this.powerOn();
+	public static double div(int num1, int num2) {
 		return ((double) num1) / num2;
 	}
 }
