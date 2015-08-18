@@ -14,4 +14,11 @@ package org.dimigo.inheritance;
  */
 public class Dog extends Animal {
 
+	/**
+	 * @param name
+	 */
+	public Dog (String name) {
+		super(name);
+	}
+
 }

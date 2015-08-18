@@ -14,6 +14,14 @@ package org.dimigo.inheritance;
  */
 public class Tiger extends Animal {
 
+	/**
+	 * @param name
+	 */
+	public Tiger (String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void bark() {
 		System.out.println("어흥");

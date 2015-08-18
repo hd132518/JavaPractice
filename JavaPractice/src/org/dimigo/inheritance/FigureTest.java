@@ -12,7 +12,7 @@ package org.dimigo.inheritance;
  * @author	박건
  * @version	1.0
  */
-public class FigureTest {
+public class FigureTest {  
 
 	/**
 	 * @param args

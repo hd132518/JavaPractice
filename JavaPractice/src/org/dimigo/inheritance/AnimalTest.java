@@ -15,13 +15,16 @@ package org.dimigo.inheritance;
 public class AnimalTest {
 
 	public static void main (String[] args) {
-		Dog dog = new Dog();
+		Dog dog = new Dog("멍멍");
+		System.out.println(dog.toString());
 		dog.bark();
 		
-		Cat cat = new Cat();
+		Cat cat = new Cat("고양");
+		System.out.println(cat.toString());
 		cat.bark();
 		
-		Tiger tiger = new Tiger();
+		Tiger tiger = new Tiger("호동");
+		System.out.println(tiger.toString());
 		tiger.bark();
 	}
 
