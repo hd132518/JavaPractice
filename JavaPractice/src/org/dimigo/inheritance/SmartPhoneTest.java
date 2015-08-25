@@ -15,20 +15,20 @@ package org.dimigo.inheritance;
 public class SmartPhoneTest {
 
 	public static void main(String[] args) {
-		SmartPhone s = new IPhone("IPhone 6", "애플", 700000);
-		System.out.println(s.toString());
-		s.turnOn();
-		s.pay();
-		s.useSpecialFunction(s);
-		s.turnOff();
-		System.out.println();
 		
-		SmartPhone g = new Galaxy("갤럭시 S6", "삼성", 650000);
-		System.out.println(g.toString());
-		g.turnOn();
-		g.pay();
-		g.useSpecialFunction(s);
-		g.turnOff();
+		SmartPhone[] phones = {
+			new IPhone("IPhone 6", "애플", 700000),
+			new Galaxy("갤럭시 S6", "삼성", 650000)
+		};
+		
+		for(SmartPhone s : phones) {
+			System.out.println(s.toString());
+			s.turnOn();
+			s.pay();
+			s.useSpecialFunction();
+			s.turnOff();
+			System.out.println();
+		}
 		
 	}
 }
